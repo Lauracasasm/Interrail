@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/estilosSimulacro.css">
+        <title>El interrail</title>
+    </head>
+    <body>
+        <header>
+            <div>
+                <img src="./img/interrail.png" alt="Logo Interrail">
+            </div>
+            <div>
+                <h1>el interrail</h1>
+                <h3>Nuestro viaje por europa</h3>
+            </div>
+            <div>
+                <label for="Buscador">Buscar:</label> <br>
+                <input type="search">
+            </div>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="./html/pagina1.html">Mi pagina</a></li>
+                <li><a href="./html/Paginas externas/pagina2.html">Acceso a otra pagina</a></li>
+                <li><a href="https://www.interrail.eu/es" target="_blank">Pagina Interrail</a></li>
+                <li><a href="#footer">Ir al final</a></li>
+              </ul>
+        </nav>
+
+        <div id="contenedor">
+            <div id="imagen">
+                <h4>Fotos del viaje</h4>
+                <br>
+                <div>
+                    <img src="./img/interiorTren.jpeg" alt="Interior del tren">
+                </div>
+            </div>
+            <div  id="formulario">
+                <h4>Formulario de registro</h4>
+                <br>
+                <form action="http://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+                    <div class="flexible">
+                        <div>
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre" name="nombre" maxlength="10" size="10" required>
+                        </div>
+                        <div>
+                            <label for="apellido">Apellido:</label>
+                            <input type="text" id="apellido" name="apellido" maxlength="10" size="10">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="Sexo">Genero:</label>
+                        <input type="radio" id="Hombre" name="Sexo" value="Hombre">
+                        <label for="Hombre">Hombre</label>
+                        <input type="radio" id="Mujer" name="Sexo" value="Mujer">
+                        <label for="Mujer">Mujer</label>
+                        <br>
+                        <br>    
+                        <label for="fechaNac">Fecha Nacimiento:</label>
+                        <input type="date" id="fechaNac" name="fechaNac" required>
+                    </div>
+                    <div>
+                        <label for="pais">Pais:</label>
+                        <select name="pais" id="pais">
+                            <option value="España" selected>España</option>
+                            <option value="Francia">Francia</option>
+                            <option value="Francia">Portugal</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" maxlength="30" size="30" placeholder="Inserta tu email">
+                    </div>
+                    <div>
+                    <div>
+                        <textarea name="comentarios" id="comentarios" cols="30" rows="3" placeholder="Inserta tus comentarios"></textarea>   
+                    </div>
+                    <div class="flexible">
+                        <div>
+                            <input type="checkbox" id="noticias" name="noticias" checked>
+                            <label for="noticias"> Recibir noticias</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="termCond" name="termCond" required>
+                            <label for="termCond"> Acepto los términos</label>
+                        </div>
+                    </div>   
+                    </div>
+                    <div class="flexible">
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Limpiar">
+                    </div>
+
+                </form>
+            </div>
+            <div id="tabla">
+                <br>
+                <br>
+                <table>
+                    <tr>
+                        <th colspan="3">Paises que recorremos</th>
+                    </tr>
+                    <tr>
+                        <th>PAIS</th>
+                        <th>CIUDAD</th>
+                        <th>ESTANCIA</th>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">España</td>
+                        <td>Madrid</td>
+                        <td>1 noche</td>
+                    </tr>
+                    <tr>
+                        <td>Barcelona</td>
+                        <td>2 noches</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Francia</td>
+                        <td>Paris</td>
+                        <td>3 noches</td>
+                    </tr>
+                    <tr>
+                        <td>Holanda</td>
+                        <td>Amsterdan</td>
+                        <td>3 noches</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">Alemania</td>
+                        <td>Stuttgart</td>
+                        <td>1 noche</td>
+                    </tr>
+                    <tr>
+                        <td>Mnich</td>
+                        <td>3 noches</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Berlin</td>
+                        <td>3 noches</td>
+                
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <footer id="footer">
+            <h3>Pie de Página</h3>
+        </footer>
+        
+    </body>
+</html>
